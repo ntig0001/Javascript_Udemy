@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/1ba532aa4c.js"></script>
+  <style type="text/css">
+  body{
+    padding-top: 70px;
+    background: url(https://images.unsplash.com/photo-1562736171-895cefb6a161?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80);
+    background-size: cover;
+    background-position: center;
+  }
+  .jumbotron{
+    color: #2c3e50;
+    background:#BDF3F8;
+  }
+  .navbar-inverse{
+    background: #2c3e50;
+  }
+
+  .navbar-inverse .navbar-nav>li>a{
+    color: white;
+  }
+  .navbar-inverse .navbar-brand{
+    color: white;
+  }
+
+  .image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+              <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing. Error, officia?</p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://cdn.tourcms.com/a/11676/890/1/large.jpg" alt="Welcome to Niagara">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+           <div class="thumbnail">
+             <img class="image" src="https://images.unsplash.com/photo-1547807101-58c1e192a112?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+           </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img class="image" src="https://images.unsplash.com/photo-1549690402-9ce19490a3be?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img class="image" src="https://images.unsplash.com/photo-1559557506-1c51693dbac8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1790&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img class="image" src="https://images.unsplash.com/photo-1541251711960-c085155ceea0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://images.unsplash.com/photo-1516508636691-2ea98becb2f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://images.unsplash.com/photo-1544091329-050f1fc88783?ixlib=rb-1.2.1&auto=format&fit=crop&w=2059&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+               <img src="https://images.unsplash.com/photo-1544091329-050f1fc88783?ixlib=rb-1.2.1&auto=format&fit=crop&w=2059&q=80">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+               <img src="https://images.unsplash.com/photo-1561821442-c26fce9a5dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80">
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

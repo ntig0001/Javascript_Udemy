@@ -1,0 +1,36 @@
+/* h1{
+  color: rgb(38, 50, 100);
+}
+h4{
+  color: rgb(60, 200, 54);
+}
+li{
+  color: rgb(80, 87, 20);
+}
+
+body{
+  background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h4{
+  border: 1px solid rgb(60, 200, 54,.3);
+} */
+
+td{
+  width: 100px;
+  height: 100px;
+}
+h1{
+  text-align: center;
+}
+.vertical{
+  border-left: 2px solid black;
+  border-right: 2px solid blue;
+  margin: auto;
+}
+
+.horizontal{
+  border-top: 2px solid black;
+  border-bottom: 2px solid blue;
+}
