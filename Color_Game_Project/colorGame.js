@@ -46,13 +46,13 @@ function setUpSquares(){
       //grab color of clicked square
       var clickedColor = (this.style.background);
       if(clickedColor === pickedColor){
-        messageDisplay.textContent = "Correct!";
+        messageDisplay.textContent = "Yaaay!!";
         resetButton.textContent = "Play Again?";
         changeColors(clickedColor);
         h1.style.background = clickedColor;
       } else{
-        this.style.background = "#232323";
-        messageDisplay.textContent = "Try Again";
+        this.style.background = "#e8d8d5";
+        messageDisplay.textContent = "Ooops...";
       }
     });
   }
