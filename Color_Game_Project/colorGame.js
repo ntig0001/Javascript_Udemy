@@ -7,6 +7,9 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
+var pass = new Audio('https://www.fesliyanstudios.com/play-mp3/2653');//large clapping sound
+var fail = new Audio('https://www.fesliyanstudios.com/play-mp3/5659'); //glass breaking
+var click = new Audio('https://www.fesliyanstudios.com/play-mp3/6'); //mouse click
 
 init();
 
@@ -44,13 +47,16 @@ function setUpSquares(){
   for (var i = 0; i < squares.length; i++){
     squares[i].addEventListener("click", function(){
       //grab color of clicked square
+      click.play();
       var clickedColor = (this.style.background);
       if(clickedColor === pickedColor){
+        pass.play(), 2000;
         messageDisplay.textContent = "Yaaay!!";
         resetButton.textContent = "Play Again?";
         changeColors(clickedColor);
         h1.style.background = clickedColor;
-      } else{
+      }else{
+        fail.play();
         this.style.background = "#e8d8d5";
         messageDisplay.textContent = "Ooops...";
       }
@@ -86,7 +92,7 @@ function reset(){
 }
 
 resetButton.addEventListener("click", function(){
-  reset();
+    reset();
 });
 
 function changeColors(color){
