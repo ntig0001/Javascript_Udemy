@@ -1,5 +1,7 @@
 body{
-  background: #232323;
+  background:url(https://images.unsplash.com/photo-1543756070-dd3109556b0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: Tahoma;
 }
@@ -7,7 +9,7 @@ body{
 h1{
   text-align: center;
   line-height: 1.1;
-  color: white;
+  color: #e8d8d5;
   font-weight: normal;
   background: steelblue;
   margin: 0;
@@ -33,7 +35,7 @@ h1{
 }
 
 #stripe{
-  background: white;
+  background: #e8d8d5;
   height: 30px;
   text-align: center;
   color: black;
@@ -45,7 +47,7 @@ h1{
 
 .selected{
   background: steelblue;
-  color: white;
+  color: #e8d8d5;
 }
 
 #message{
@@ -69,6 +71,6 @@ button{
 }
 
 button:hover{
-  color: white;
+  color: #e8d8d5;
   background: steelblue;
 }
