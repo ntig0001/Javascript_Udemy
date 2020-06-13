@@ -1,13 +1,11 @@
-var p1Button = document.querySelector("#p1");
-var p2Button = document.getElementById("p2");
-var resetButton = document.getElementById("reset");
-var winningScoreDisplay = document.querySelector("p span");
-
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
-var numInput = document.querySelector("input");
-/* //if other inputs
-var numInput = document.querySelector("input [type='number']"); */
+var max = document.getElementById("max");
+var resetButton = document.getElementById("reset");
+var p1Button = document.querySelector("#p1");
+var p2Button = document.querySelector("#p2");
+var numInput = document. querySelector("input");
+var pass = new Audio('https://www.fesliyanstudios.com/play-mp3/2653');//large clapping sound
 
 var p1Score = 0;
 var p2Score = 0;
@@ -20,6 +18,7 @@ p1Button.addEventListener("click", function(){
       if(p1Score === winningScore){
         p1Display.classList.add("winner");
         gameOver = true;
+        pass.play();
       }
       p1Display.textContent = p1Score;
   }
@@ -51,7 +50,7 @@ function reset(){
 }
 
 numInput.addEventListener("change", function(){
-  winningScoreDisplay.textContent = this.value; 
+  max.textContent = this.value; 
   winningScore = Number(this.value);
   reset();
 });

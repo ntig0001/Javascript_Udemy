@@ -1,3 +1,53 @@
-.winner{
-  color: green;
+body{
+  margin: 0; 
+  padding:0; 
+}
+
+body{
+  background: url(https://images.unsplash.com/photo-1507851191112-1bb853d191fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  color: #889939;
+  font-weight: 800;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container{
+  text-align: center;
+  width: 450px;
+  margin-top:0 auto;
+  transform: translateY(50%), translateX(-50%);
+}
+
+hr{
+  border: 2px solid #49076D;
+}
+button{
+  background: #390351;
+  color: white;
+  outline: none;
+  height: 30px;
+  border: 2px solid #390351;
+}
+
+input{
+  border: 1px solid #922BC2;
+  color: #922BC2;
+  height: 30px;
+}
+
+#max{
+  font-size: 25px; 
+}
+
+#p1Display, #p2Display{
+  font-size: 50px; 
+}
+
+#title{
+  text-align: center;
+  color: #110C02;
+}
+
+.winner {
+  color: #055B27;
 }
