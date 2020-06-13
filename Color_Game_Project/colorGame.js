@@ -7,8 +7,7 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
-var pass = new Audio('https://www.fesliyanstudios.com/play-mp3/2653');//large clapping sound
-// var fail = new Audio('https://www.fesliyanstudios.com/play-mp3/5659'); //glass breaking
+var pass = new Audio('https://www.fesliyanstudios.com/play-mp3/6676');//cymbals
 var click = new Audio('https://www.fesliyanstudios.com/play-mp3/6'); //mouse click
 
 init();
@@ -49,7 +48,7 @@ function setUpSquares(){
       //grab color of clicked square
       var clickedColor = (this.style.background);
       if(clickedColor === pickedColor){
-        pass.play(), 2000;
+        pass.play();
         messageDisplay.textContent = "Yaaay!!";
         resetButton.textContent = "Play Again?";
         changeColors(clickedColor);
@@ -57,7 +56,7 @@ function setUpSquares(){
       }else{
         click.play();
         this.style.background = "#e8d8d5";
-        messageDisplay.textContent = "Ooops...";
+        messageDisplay.textContent = "Oops!!";
       }
     });
   }
