@@ -4,9 +4,20 @@ body{
   background-position: fixed;
   background-repeat: no-repeat;
   min-width: 500px;
-  min-height:900px;
+  min-height:100%;
   margin: auto;
   font-family: Tahoma;
+}
+
+  @media screen  and (max-width: 730px) {
+    body {
+      background-size: cover;
+      background-position: fixed;
+      min-width: 500px;
+      height:1000px;
+      margin: auto;
+    }
+  
 }
 
 h1{
